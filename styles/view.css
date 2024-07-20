@@ -1,0 +1,81 @@
+main{
+    width:80%;
+    margin:auto;
+}
+.resource-details {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    
+}
+.resource-details img {
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+.resource-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.resource-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.resource-details .tags {
+    font-size: 14px;
+    color: #666;
+}
+.resource-details .link-wrapper {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.resource-details a {
+    text-decoration: none;
+    color: blue;
+    overflow-x: auto;
+}
+.follow-button, .like-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #698474;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.follow-button:link, .follow-button:visited,
+.like-button:link, .like-button:visited {
+    color: white;
+    text-decoration: none;
+}
+.follow-button:hover, .like-button:hover {
+    background-color: #5a7362;
+}
+.creator,.description, .link{
+    font-weight:bold;
+}
+.resource-video {
+    margin-top: 20px;
+}
+
+@media screen and (max-width:800px){
+    main{
+    width:95%;
+    margin:auto;
+}
+.resource-details {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    
+}
+ 
+
+}
