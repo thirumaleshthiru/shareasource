@@ -95,7 +95,7 @@ overflow:auto;
 .resource-card img {
 max-width: 100%;
 height: 200px;
-border-radius: 18px;
+
 }
 .resource-card h3 {
 font-size: 18px;
