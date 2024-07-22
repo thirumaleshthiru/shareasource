@@ -90,6 +90,7 @@ $conn->close();
 <div class="resource-cards">
 <?php if (count($results) > 0): ?>
 <?php foreach ($results as $row): ?>
+
 <div class="resource-card">
 <?php if (!empty($row['cover_image'])): ?>
 <img src="data:image/jpeg;base64,<?php echo base64_encode($row['cover_image']); ?>" alt="<?php echo htmlspecialchars($row['title']); ?>">
@@ -99,8 +100,10 @@ $conn->close();
 <h3><?php echo htmlspecialchars($row['title']); ?></h3>
 <p class="description"><?php echo htmlspecialchars($row['resource_description']); ?></p>
 <p>Creator: <span class="creator"><?php echo htmlspecialchars($row['username']); ?></span></p>
+<div class="views-likes">
 <p>Views: <?php echo $row['views']; ?></p>
 <p>Likes: <?php echo $row['likes']; ?></p>
+</div>
 <p><a href="view_resource.php?resource_id=<?php echo urlencode(base64_encode($row['resource_id'])); ?>">View Resource</a></p>
 </div>
 <?php endforeach; ?>
