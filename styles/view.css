@@ -1,10 +1,11 @@
 main{
-    width:80%;
+    width:90%;
     margin:auto;
+ 
 }
 .resource-details {
     max-width: 100%;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 20px;
     border: 1px solid #ccc;
     overflow-x: auto;
@@ -62,10 +63,34 @@ main{
 .resource-video {
     margin-top: 20px;
 }
+.follow-likes{
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+}
+.tags {
+    margin-top: 20px;  
+}
+
+.tag-button {
+    display: inline-block;
+    background-color: #667BC6; 
+    color: #ffffff;  
+    padding: 8px 12px;  
+    margin: 5px; 
+    border-radius: 4px;  
+    text-decoration: none;  
+    font-size: 14px; 
+    transition: background-color 0.3s ease; 
+}
+
+.tag-button:hover {
+    background-color: #FFB4C2;  
+}
 
 @media screen and (max-width:800px){
     main{
-    width:95%;
+    width:100%;
     margin:auto;
 }
 .resource-details {

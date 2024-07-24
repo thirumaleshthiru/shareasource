@@ -112,63 +112,7 @@ return $tag_id;
 <head>
 <meta charset="UTF-8">
 <title>Add New Resource</title>
-
-<style>
-body {
-font-family: Arial, sans-serif;
-background-color: #EEEDEB;
-color: #2F3645;
-margin: 0;
-padding: 0;
-}
-.navbar {
-background-color: #939185;
-padding: 10px;
-}
-.container {
-max-width: 600px;
-margin: 50px auto;
-padding: 20px;
-background-color: #E6B9A6;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.message {
-text-align: center;
-margin-top: 20px;
-padding: 10px;
-border-radius: 5px;
-color: #EEEDEB;
-}
-.error {
-background-color: #FF6B6B;
-}
-.success {
-background-color: #6BFF6B;
-}
-form {
-display: flex;
-flex-direction: column;
-}
-label {
-margin-top: 10px;
-}
-input, textarea, select, button {
-margin-top: 5px;
-padding: 10px;
-border: 1px solid #2F3645;
-border-radius: 5px;
-}
-button {
-background-color: #2F3645;
-color: #EEEDEB;
-cursor: pointer;
-margin-top: 20px;
-}
-button:hover {
-background-color: #939185;
-}
-</style>
+<link rel="stylesheet" href="./styles/add.css">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>

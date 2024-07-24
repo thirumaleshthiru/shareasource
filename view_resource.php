@@ -71,10 +71,10 @@ $check_follow_result = $check_follow_stmt->get_result();
 
 if ($check_follow_result->num_rows > 0) {
 $follow_status = "unfollow";
-$follow_text = "Unfollow";
+$follow_text = '<i class="fa-solid fa-minus"></i> Unfollow';
 } else {
 $follow_status = "follow";
-$follow_text = "Follow";
+$follow_text = '<i class="fa-solid fa-plus"></i> Follow';
 }
 
 $check_follow_stmt->close();
@@ -88,10 +88,10 @@ $check_like_result = $check_like_stmt->get_result();
 
 if ($check_like_result->num_rows > 0) {
 $like_status = "unlike";
-$like_text = "Unlike";
+$like_text = '<i class="fa-solid fa-heart"></i> Unlike';
 } else {
 $like_status = "like";
-$like_text = "Like";
+$like_text = '<i class="fa-regular fa-heart"></i> Like';
 }
 
 $check_like_stmt->close();
@@ -106,9 +106,10 @@ $conn->close();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php echo htmlspecialchars($title); ?></title>
 <meta name="description" content="<?php echo htmlspecialchars($description); ?>">
-<link rel="stylesheet" href="./styles/view.css">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">  
+<link rel="stylesheet" href="./styles/view.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Icon library -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >  
 </head>
 <body>
 <?php include 'navbar.php' ?>
@@ -149,7 +150,13 @@ $conn->close();
 
 <div class="resource-video" id="video-container">
 </div>
-<p class="tags">Tags: <?php echo implode(', ', $tags); ?></p>
+<br>
+<p class="tags">
+  
+    <?php foreach ($tags as $tag): ?>
+        <a href="index.php?search=<?php echo urlencode($tag); ?>&filter=newest" class="tag-button"><?php echo htmlspecialchars($tag); ?></a>
+    <?php endforeach; ?>
+</p>
 
 </div>
 </main>

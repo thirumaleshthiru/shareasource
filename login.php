@@ -61,68 +61,7 @@ $conn->close();
 <meta charset="UTF-8">
 <title>Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-
-* {
-padding: 0;
-box-sizing: border-box;
-margin: 0;
-}
-.navbar {
-background-color: #939185;
-padding: 10px;
-}
-.containerr {
-max-width: 400px;
-width: 100%;
-padding: 20px;
-background-color: #E6B9A6;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-h2 {
-text-align: center;
-}
-form {
-display: flex;
-flex-direction: column;
-}
-label {
-margin-bottom: 5px;
-}
-input {
-margin-bottom: 15px;
-padding: 10px;
-border: 1px solid #939185;
-border-radius: 5px;
-}
-button {
-padding: 10px;
-border: none;
-border-radius: 5px;
-background-color: #2F3645;
-color: #EEEDEB;
-cursor: pointer;
-}
-.message {
-text-align: center;
-margin-top: 20px;
-padding: 10px;
-border-radius: 5px;
-color: #EEEDEB;
-}
-.error {
-background-color: #FF6B6B;
-}
-.success {
-background-color: #6BFF6B;
-}
-</style>
+<link rel="stylesheet" href="./styles/login.css">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
